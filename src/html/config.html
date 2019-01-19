@@ -1,0 +1,19 @@
+<h1>説明欄リンクターゲット設定</h1>
+<p>アプリ説明欄のリンクタグにtargetを設定できるようにします。</p>
+<br>
+<form name="setting">
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">target:</div>
+        <div class="kintoneplugin-input-outer">
+            <input class="kintoneplugin-input-text" type="text" id="target" list="target-list">
+            <datalist id="target-list">
+                <option value="_blank">別ウィンドウ/別タブ</option>
+                <option value="_self">自分自身</option>
+                <option value="_top">フレーム分割を全解除</option>
+                <option value="_parent">フレーム分割を1段階解除</option>
+            </datalist>
+        </div>
+    </div>
+    <button class="kintoneplugin-button-dialog-ok" type="button" id="setting-submit">保存する</button>
+    <button class="kintoneplugin-button-dialog-cancel" type="button" id="setting-cancel">キャンセル</button>
+</form>
